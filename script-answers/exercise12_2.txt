@@ -1,0 +1,7 @@
+Script started on 2024-10-07 15:27:23+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="133" LINES="110"]
+kettujoo@poposdesktop:~/Projects/fs-part12(main)$ docker container run -it ubuntu bash
+root@0540a1114986:/# mkdir -p /usr/src/app
+root@0540a1114986:/# touch /usr/src/app/index.js
+root@0540a1114986:/# exit
+kettujoo@poposdesktop:~/Projects/fs-part12(main)$ exit
+Script done on 2024-10-07 15:28:02+03:00 [COMMAND_EXIT_CODE="0"]
