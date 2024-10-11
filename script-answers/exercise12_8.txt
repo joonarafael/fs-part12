@@ -18,12 +18,12 @@ For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
 
 ------
    The server generated these startup warnings when booting
-   2024-10-11T12:24:34.389+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
-   2024-10-11T12:24:34.623+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
-   2024-10-11T12:24:34.623+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
-   2024-10-11T12:24:34.623+00:00: We suggest setting the contents of sysfsFile to 0.
-   2024-10-11T12:24:34.623+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
-   2024-10-11T12:24:34.623+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+   2024-10-11T12:20:34.389+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2024-10-11T12:20:34.623+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2024-10-11T12:20:34.623+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2024-10-11T12:20:34.623+00:00: We suggest setting the contents of sysfsFile to 0.
+   2024-10-11T12:20:34.623+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2024-10-11T12:20:34.623+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
 ------
 
 test> show dbs
