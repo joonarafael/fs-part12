@@ -1,10 +1,0 @@
-Script started on 2024-10-07 15:27:23+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="133" LINES="110"]
-[?2004h]0;kettujoo@poposdesktop: ~/Projects/fs-part12[01;32mkettujoo@poposdesktop[00m:[01;34m~/Projects/fs-part12[01;31m(main)[00m$ [7mdocker container run -it ubuntu bash[27mdocker container run -it ubuntu bash
-[?2004l[?2004h]0;root@0540a1114986: /root@0540a1114986:/# sudo mkdir          mkld   kdir -p /usr/src/app
-[?2004l[?2004h]0;root@0540a1114986: /root@0540a1114986:/# touch /usr/src/app/index.js
-[?2004l[?2004h]0;root@0540a1114986: /root@0540a1114986:/# [Kexit
-[?2004lexit
-[?2004h]0;kettujoo@poposdesktop: ~/Projects/fs-part12[01;32mkettujoo@poposdesktop[00m:[01;34m~/Projects/fs-part12[01;31m(main)[00m$ exit
-[?2004lexit
-
-Script done on 2024-10-07 15:28:02+03:00 [COMMAND_EXIT_CODE="0"]

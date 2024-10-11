@@ -1,0 +1,93 @@
+Script started on 2024-10-11 13:12:23+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="131" LINES="109"]
+kettujoo@poposdesktop:~/Projects/fs-part12(main)$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED      STATUS                  PORTS     NAMES
+0540a1114986   ubuntu    "bash"    3 days ago   Exited (0) 3 days ago             nifty_sanderson
+kettujoo@poposdesktop:~/Projects/fs-part12(main)$ docker start -i nifty_sanderson 
+root@0540a1114986:/# nano /usr/src/app/index.js 
+bash: nano: command not found
+root@0540a1114986:/# apt update   
+Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [482 kB]
+Get:7 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+Get:8 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [372 kB]  
+Get:11 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [446 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [13.7 kB] 
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [446 kB]     
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [17.8 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [688 kB]
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [514 kB]
+Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [11.8 kB]
+Fetched 25.2 MB in 2s (15.4 MB/s)                          
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+4 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@0540a1114986:/# apt upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  libproc2-0 login passwd procps
+4 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1813 kB of archives.
+After this operation, 4096 B of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 login amd64 1:4.13+dfsg1-4ubuntu3.2 [202 kB]
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libproc2-0 amd64 2:4.0.4-4ubuntu3.2 [59.5 kB]
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 passwd amd64 1:4.13+dfsg1-4ubuntu3.2 [845 kB]
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 procps amd64 2:4.0.4-4ubuntu3.2 [707 kB]
+Fetched 1813 kB in 0s (4181 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 4378 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.13+dfsg1-4ubuntu3.2_amd64.deb ...
+Unpacking login (1:4.13+dfsg1-4ubuntu3.2) over (1:4.13+dfsg1-4ubuntu3) ...
+Setting up login (1:4.13+dfsg1-4ubuntu3.2) ...
+(Reading database ... 4378 files and directories currently installed.)
+Preparing to unpack .../libproc2-0_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3) ...
+Preparing to unpack .../passwd_1%3a4.13+dfsg1-4ubuntu3.2_amd64.deb ...
+Unpacking passwd (1:4.13+dfsg1-4ubuntu3.2) over (1:4.13+dfsg1-4ubuntu3) ...
+Preparing to unpack .../procps_2%3a4.0.4-4ubuntu3.2_amd64.deb ...
+Unpacking procps (2:4.0.4-4ubuntu3.2) over (2:4.0.4-4ubuntu3) ...
+Setting up libproc2-0:amd64 (2:4.0.4-4ubuntu3.2) ...
+Setting up passwd (1:4.13+dfsg1-4ubuntu3.2) ...
+Setting up procps (2:4.0.4-4ubuntu3.2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.3) ...
+root@0540a1114986:/# apt install nano
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 281 kB of archives.
+After this operation, 856 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 nano amd64 7.2-2build1 [281 kB]
+Fetched 281 kB in 0s (1097 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... 4379 files and directories currently installed.)
+Preparing to unpack .../nano_7.2-2build1_amd64.deb ...
+Unpacking nano (7.2-2build1) ...
+Setting up nano (7.2-2build1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.g
+z (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz 
+(of link group pico) doesn't exist
+root@0540a1114986:/# nano /usr/src/app/index.js 
+root@0540a1114986:/# exit
+exit
+kettujoo@poposdesktop:~/Projects/fs-part12(main)$ exit
+exit
+Script done on 2024-10-11 13:13:57+03:00 [COMMAND_EXIT_CODE="0"]
