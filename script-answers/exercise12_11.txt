@@ -1,0 +1,29 @@
+Script started on 2024-10-17 15:43:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="131" LINES="109"]
+kettujoo@poposdesktop:~/Projects/fs-part12/todo-app/todo-backend(main)$ docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED         STATUS                  PORTS                                           NAMES
+578bb78bd967   redis               "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes            0.0.0.0:6379->6379/tcp, :::6379->6379/tcp       todo-backend-redis-1
+9a106fc1a4fe   initialized-mongo   "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes            0.0.0.0:3456->27017/tcp, [::]:3456->27017/tcp   todo-backend-mongo-1
+0540a1114986   ubuntu              "bash"                   10 days ago     Exited (0) 6 days ago                                                   nifty_sanderson
+kettujoo@poposdesktop:~/Projects/fs-part12/todo-app/todo-backend(main)$ docker exec -it todo-backend-redis-1 sh
+# redis-cli
+127.0.0.1:6379> KEYS *
+1) "added_todos"
+127.0.0.1:6379> GET added_todos
+"3"
+127.0.0.1:6379> SET added_todos 9001
+OK
+127.0.0.1:6379> GET added_todos
+"9002"
+127.0.0.1:6379> DEL added_todos
+(integer) 1
+127.0.0.1:6379> KEYS *
+(empty array)
+127.0.0.1:6379> KEYS *
+1) "added_todos"
+127.0.0.1:6379> GET added_todos
+"1"
+127.0.0.1:6379> exit
+# exit
+kettujoo@poposdesktop:~/Projects/fs-part12(main)$ exit
+exit
+Script done on 2024-10-17 15:49:11+03:00 [COMMAND_EXIT_CODE="0"]
